@@ -14,9 +14,17 @@ class UserClass {
     this.surname = surname;
     this.age = age;
   }
-  getFullName() {
+  get fullName() {
     return `${this.name} ${this.surname}`;
   }
+set fullName(newFullname)
+if (typeof newFullname !== 'string') {
+  throw new TypeError ('Name must be a string');
+}
+
+const nameArray = newFullname.split(' ');
+this.name = nameArray[0];
+this.surname nameArray
 
   isAdult() {
     return this.age >= 18;
@@ -78,14 +86,14 @@ getSumApple() {
 
 
 
-
-
+class fuel2 { 
 constructor(volume1, density1) {
   this.volume1 = volume1;
   this.density1 = density1;
     }
 
     set volume1 (v) {
+      // setter
       if (typeof v !== 'number') {
         throw new TypeError ('Data must be a numbers');
 
@@ -93,5 +101,7 @@ constructor(volume1, density1) {
     }
   get volume1 (v) {
     // getter
+    
     return this._volume;
-      }
+      };
+    }
