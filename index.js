@@ -23,13 +23,17 @@ if (typeof newFullname !== 'string') {
 }
 
 const nameArray = newFullname.split(' ');
-this.name = nameArray[0];
-this.surname nameArray
 
-  isAdult() {
+this.name = nameArray[0];
+this.surname nameArray [1];
+}
+
+  get isAdult() {
     return this.age >= 18;
   }
 }
+
+
 const user = new UserClass("Vlad", "Test", 50);
 const user2 = new UserClass("Masha", "Medved", 10);
 
